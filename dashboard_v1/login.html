@@ -1,20 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dashboard V1</title>
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard V1</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <style>
+        #login{
+            width: 400px;
+        }
+        #login h1{
+            margin-bottom: 75px;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <div class="card shadow-sm">
-    <div class="card-body">
-      <h1 class="h1 fw-bold text-center">Login</h1>
+<div class="container align-items-center d-flex" style="height: 100vh">
+    <div class="card shadow-sm mx-auto"  id="login">
+        <div class="card-body">
+            <h1 class="h1 fw-bold text-center mt-2">Sign In</h1>
+            <form action="" method="post" class="px-2">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary form-control">Sign In</button>
+                </div>
+                <div class="mb-3">
+                    <span class="text-muted">Lupa password &nbsp;</span><a href="#">klik disini</a>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
 
 <script src="/assets/js/bootstrap.bundle.min.js"></script>
