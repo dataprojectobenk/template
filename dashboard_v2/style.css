@@ -1,0 +1,25 @@
+:root {
+    --sidebar: 250px;
+    --bg-main: #d3d7cf;
+}
+
+body {
+    background: #d3d7cf;
+}
+
+/* sidebar */
+#sidebar {
+    width: var(--sidebar);
+}
+
+#sidebar a.nav-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#sidebar a.nav-link:hover,#sidebar a.nav-link.active {
+    background: linear-gradient(225deg, #bec2ba, #e2e6dd);
+    box-shadow: -20px 20px 60px #b3b7b0, 20px -20px 60px #f3f7ee;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* end sidebar */
