@@ -15,6 +15,8 @@ body {
     transition: ease-in-out .2s margin-left;
 }
 
+
+
 #sidebar a.nav-link {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -41,12 +43,36 @@ body {
 
 
 @media screen and (max-width:992px) {
-    #sidebar{
+    #sidebar {
         margin-left: calc(0px - var(--sidebar));
         transition: ease-in-out .2s margin-left;
+        position: absolute;top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 100;
+
     }
-    #content{
+
+    #content {
         width: 100%;
-        transition: width ease-in-out .2s;
+        transition: none;
+    }
+
+
+    .show-menu #sidebar {
+        margin-left: 0;
+        z-index: 100;
+
+    }
+
+    .blur {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        top: 0;
     }
 }
