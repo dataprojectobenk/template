@@ -41,7 +41,9 @@ body {
         -5px -5px 25px #ffffff
 }
 
-
+footer{
+    margin-left: var(--sidebar);
+}
 @media screen and (max-width:992px) {
     #sidebar {
         margin-left: calc(0px - var(--sidebar));
@@ -58,6 +60,9 @@ body {
         transition: none;
     }
 
+    footer{
+        margin-left: 0;
+    }
 
     .show-menu #sidebar {
         margin-left: 0;
